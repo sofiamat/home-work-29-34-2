@@ -1,0 +1,269 @@
+:root {
+  /* кольори */
+  --primary-color: #fff;
+  --backgroung-color: rgb(195, 73, 73);
+
+  /* шрифти */
+  --font-primary: "Roboto", serif;
+}
+
+.container {
+  max-width: 1250px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+/* <!--................................................... DESKTOP................................................... --> */
+/* <!--.................. HEADER................. --> */
+
+.header {
+  flex-direction: row;
+}
+
+.logo {
+  color: var(--backgroung-color);
+  font-size: 120px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.header-button {
+  display: none;
+  background-color: var(--backgroung-color);
+}
+
+.nav {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroung-color);
+
+  padding: 20px 405px;
+}
+
+/* <!--..................MAIN................. --> */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-main {
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.main-text {
+  background-color: var(--backgroung-color);
+  padding: 215px 360px;
+}
+
+.content-aside {
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-text {
+  background-color: var(--backgroung-color);
+  padding: 215px 155px;
+}
+/* <!--..................COLUMN................. --> */
+
+.column {
+  margin-top: 20px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.grid__item {
+  background-color: var(--backgroung-color);
+  flex-basis: ((100% - 60px) / 3);
+}
+
+.product__text {
+  padding: 27px 140px;
+}
+
+/* <!--................................................... TABLET................................................... --> */
+
+@media screen and (max-width: 1248px) {
+  .container {
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  /* <!--.................. HEADER................. --> */
+
+  .header {
+    flex-direction: row;
+  }
+
+  .logo {
+    color: var(--backgroung-color);
+    font-size: 95px;
+    font-weight: 400;
+    margin-right: 13px;
+  }
+
+  .header-button {
+    display: none;
+    background-color: var(--backgroung-color);
+  }
+
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroung-color);
+
+    padding: 17px 240px;
+  }
+
+  /* <!--..................MAIN................. --> */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-main {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .main-text {
+    background-color: var(--backgroung-color);
+    padding: 155px 360px;
+  }
+
+  .content-aside {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-text {
+    background-color: var(--backgroung-color);
+    padding: 120px 360px;
+  }
+  /* <!--..................COLUMN................. --> */
+  .grid__item {
+    flex-basis: ((100% - 30px) / 2);
+  }
+}
+
+/* <!--................................................... MOBILE................................................... --> */
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* <!--.................. HEADER................. --> */
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    color: var(--backgroung-color);
+    font-size: 75px;
+    font-weight: 500;
+    margin-right: 165px;
+  }
+
+  .header-button {
+    padding: 10px;
+    background-color: var(--backgroung-color);
+  }
+
+  .nav {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroung-color);
+
+    padding: 45px 225px;
+  }
+
+  /* <!--..................MAIN................. --> */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-main {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .main-text {
+    background-color: var(--backgroung-color);
+    padding: 130px 130px;
+  }
+
+  .content-aside {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-text {
+    background-color: var(--backgroung-color);
+    padding: 130px 130px;
+  }
+
+  /* <!--..................COLUMN................. --> */
+
+  .product__text {
+    padding: 27px 115px;
+  }
+}
